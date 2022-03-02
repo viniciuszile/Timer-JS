@@ -1,4 +1,4 @@
-var bandeira = false;
+var inicio = false;
 var minutos 
 var segundos
 
@@ -9,7 +9,7 @@ function start(){
          segundos = 59
          minutos  = 24
     }
-    bandeira = false;
+    inicio = false;
 
     const Segundos =  () => {
         document.getElementById('sec').innerHTML = (segundos) 
@@ -33,7 +33,7 @@ function start(){
 }
 
 function stop(){
-    bandeira = true;
+    inicio = true;
     clearInterval(intervSec);
     clearInterval(interMin);
     
